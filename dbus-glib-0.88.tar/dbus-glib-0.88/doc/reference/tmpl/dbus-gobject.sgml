@@ -1,0 +1,80 @@
+<!-- ##### SECTION Title ##### -->
+DBus GObject related functions
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO DBUS_TYPE_G_OBJECT_PATH ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### STRUCT DBusGObjectInfo ##### -->
+<para>
+
+</para>
+
+@format_version: 
+@method_infos: 
+@n_method_infos: 
+@data: 
+@exported_signals: 
+@exported_properties: 
+
+<!-- ##### FUNCTION dbus_g_object_type_install_info ##### -->
+<para>
+
+</para>
+
+@object_type: 
+@info: 
+
+
+<!-- ##### FUNCTION dbus_g_object_path_get_g_type ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION dbus_g_object_register_marshaller ##### -->
+<para>
+
+</para>
+
+@marshaller: 
+@rettype: 
+@Varargs: 
+
+
+<!-- ##### FUNCTION dbus_g_object_register_marshaller_array ##### -->
+<para>
+
+</para>
+
+@marshaller: 
+@rettype: 
+@n_types: 
+@types: 
+
+

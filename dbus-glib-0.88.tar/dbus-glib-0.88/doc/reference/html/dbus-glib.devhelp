@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="D-Bus GLib bindings - Reference Manual" link="index.html" author="" name="dbus-glib">
+  <chapters>
+    <sub name="Introduction" link="ch01.html"/>
+    <sub name="API Reference" link="ch02.html">
+      <sub name="API for using D-BUS with GLib" link="ch02.html#api-overview"/>
+      <sub name="DBusGConnection" link="dbus-glib-DBusGConnection.html"/>
+      <sub name="DBus GObject related functions" link="dbus-glib-dbus-gobject.html"/>
+      <sub name="DBusGMessage" link="dbus-glib-DBusGMessage.html"/>
+      <sub name="DBusGMethod" link="dbus-glib-DBusGMethod.html"/>
+      <sub name="DBusGError" link="dbus-glib-DBusGError.html"/>
+      <sub name="DBusGProxy" link="dbus-glib-DBusGProxy.html"/>
+      <sub name="Specializable GType System" link="dbus-glib-Specializable-GType-System.html"/>
+      <sub name="DBus GLib low level" link="dbus-glib-DBus-GLib-low-level.html"/>
+    </sub>
+    <sub name="Tools Reference" link="ch03.html">
+      <sub name="dbus-binding-tool" link="dbus-binding-tool.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <function name="DBusGConnection" link="dbus-glib-DBusGConnection.html#DBusGConnection"/>
+    <function name="dbus_g_bus_get ()" link="dbus-glib-DBusGConnection.html#dbus-g-bus-get"/>
+    <function name="dbus_g_thread_init ()" link="dbus-glib-DBusGConnection.html#dbus-g-thread-init"/>
+    <function name="dbus_g_connection_open ()" link="dbus-glib-DBusGConnection.html#dbus-g-connection-open"/>
+    <function name="dbus_g_connection_ref ()" link="dbus-glib-DBusGConnection.html#dbus-g-connection-ref"/>
+    <function name="dbus_g_connection_unref ()" link="dbus-glib-DBusGConnection.html#dbus-g-connection-unref"/>
+    <function name="dbus_g_connection_flush ()" link="dbus-glib-DBusGConnection.html#dbus-g-connection-flush"/>
+    <function name="dbus_g_connection_get_connection ()" link="dbus-glib-DBusGConnection.html#dbus-g-connection-get-connection"/>
+    <function name="dbus_g_connection_register_g_object ()" link="dbus-glib-DBusGConnection.html#dbus-g-connection-register-g-object"/>
+    <function name="dbus_g_connection_unregister_g_object ()" link="dbus-glib-DBusGConnection.html#dbus-g-connection-unregister-g-object"/>
+    <function name="dbus_g_connection_lookup_g_object ()" link="dbus-glib-DBusGConnection.html#dbus-g-connection-lookup-g-object"/>
+    <function name="DBUS_TYPE_G_OBJECT_PATH" link="dbus-glib-dbus-gobject.html#DBUS-TYPE-G-OBJECT-PATH:CAPS"/>
+    <function name="DBusGObjectInfo" link="dbus-glib-dbus-gobject.html#DBusGObjectInfo"/>
+    <function name="dbus_g_object_type_install_info ()" link="dbus-glib-dbus-gobject.html#dbus-g-object-type-install-info"/>
+    <function name="dbus_g_object_path_get_g_type ()" link="dbus-glib-dbus-gobject.html#dbus-g-object-path-get-g-type"/>
+    <function name="dbus_g_object_register_marshaller ()" link="dbus-glib-dbus-gobject.html#dbus-g-object-register-marshaller"/>
+    <function name="dbus_g_object_register_marshaller_array ()" link="dbus-glib-dbus-gobject.html#dbus-g-object-register-marshaller-array"/>
+    <function name="DBusGMessage" link="dbus-glib-DBusGMessage.html#DBusGMessage"/>
+    <function name="dbus_g_message_ref ()" link="dbus-glib-DBusGMessage.html#dbus-g-message-ref"/>
+    <function name="dbus_g_message_unref ()" link="dbus-glib-DBusGMessage.html#dbus-g-message-unref"/>
+    <function name="dbus_g_message_get_message ()" link="dbus-glib-DBusGMessage.html#dbus-g-message-get-message"/>
+    <function name="DBusGMethodInfo" link="dbus-glib-DBusGMethod.html#DBusGMethodInfo"/>
+    <function name="DBusGMethodInvocation" link="dbus-glib-DBusGMethod.html#DBusGMethodInvocation"/>
+    <function name="dbus_g_method_get_sender ()" link="dbus-glib-DBusGMethod.html#dbus-g-method-get-sender"/>
+    <function name="dbus_g_method_get_reply ()" link="dbus-glib-DBusGMethod.html#dbus-g-method-get-reply"/>
+    <function name="dbus_g_method_send_reply ()" link="dbus-glib-DBusGMethod.html#dbus-g-method-send-reply"/>
+    <function name="dbus_g_method_return ()" link="dbus-glib-DBusGMethod.html#dbus-g-method-return"/>
+    <function name="dbus_g_method_return_error ()" link="dbus-glib-DBusGMethod.html#dbus-g-method-return-error"/>
+    <function name="enum DBusGError" link="dbus-glib-DBusGError.html#DBusGError"/>
+    <function name="dbus_g_error_has_name ()" link="dbus-glib-DBusGError.html#dbus-g-error-has-name"/>
+    <function name="dbus_g_error_get_name ()" link="dbus-glib-DBusGError.html#dbus-g-error-get-name"/>
+    <function name="dbus_g_error_quark ()" link="dbus-glib-DBusGError.html#dbus-g-error-quark"/>
+    <function name="dbus_g_error_domain_register ()" link="dbus-glib-DBusGError.html#dbus-g-error-domain-register"/>
+    <function name="DBusGProxy" link="dbus-glib-DBusGProxy.html#DBusGProxy"/>
+    <function name="dbus_g_proxy_new_for_name ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-new-for-name"/>
+    <function name="dbus_g_proxy_new_for_name_owner ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-new-for-name-owner"/>
+    <function name="dbus_g_proxy_new_from_proxy ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-new-from-proxy"/>
+    <function name="dbus_g_proxy_new_for_peer ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-new-for-peer"/>
+    <function name="dbus_g_proxy_set_interface ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-set-interface"/>
+    <function name="dbus_g_proxy_get_path ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-get-path"/>
+    <function name="dbus_g_proxy_get_bus_name ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-get-bus-name"/>
+    <function name="dbus_g_proxy_get_interface ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-get-interface"/>
+    <function name="dbus_g_proxy_add_signal ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-add-signal"/>
+    <function name="dbus_g_proxy_connect_signal ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-connect-signal"/>
+    <function name="dbus_g_proxy_disconnect_signal ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-disconnect-signal"/>
+    <function name="dbus_g_proxy_send ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-send"/>
+    <function name="dbus_g_proxy_call ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-call"/>
+    <function name="dbus_g_proxy_call_with_timeout ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-call-with-timeout"/>
+    <function name="dbus_g_proxy_call_no_reply ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-call-no-reply"/>
+    <function name="dbus_g_proxy_begin_call ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-begin-call"/>
+    <function name="dbus_g_proxy_begin_call_with_timeout ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-begin-call-with-timeout"/>
+    <function name="dbus_g_proxy_end_call ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-end-call"/>
+    <function name="dbus_g_proxy_cancel_call ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-cancel-call"/>
+    <function name="dbus_g_proxy_set_default_timeout ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-set-default-timeout"/>
+    <function name="DBusGTypeSpecializedCollectionIterator ()" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionIterator"/>
+    <function name="DBusGTypeSpecializedMapIterator ()" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapIterator"/>
+    <function name="DBusGTypeSpecializedAppendContext" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext"/>
+    <function name="DBusGTypeSpecializedConstructor ()" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedConstructor"/>
+    <function name="DBusGTypeSpecializedFreeFunc ()" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedFreeFunc"/>
+    <function name="DBusGTypeSpecializedCopyFunc ()" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCopyFunc"/>
+    <function name="DBusGTypeSpecializedVtable" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedVtable"/>
+    <function name="DBusGTypeSpecializedCollectionFixedAccessorFunc ()" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionFixedAccessorFunc"/>
+    <function name="DBusGTypeSpecializedCollectionIteratorFunc ()" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionIteratorFunc"/>
+    <function name="DBusGTypeSpecializedCollectionAppendFunc ()" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionAppendFunc"/>
+    <function name="DBusGTypeSpecializedCollectionEndAppendFunc ()" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionEndAppendFunc"/>
+    <function name="DBusGTypeSpecializedCollectionVtable" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionVtable"/>
+    <function name="DBusGTypeSpecializedMapIteratorFunc ()" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapIteratorFunc"/>
+    <function name="DBusGTypeSpecializedMapAppendFunc ()" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapAppendFunc"/>
+    <function name="DBusGTypeSpecializedMapVtable" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapVtable"/>
+    <function name="DBusGTypeSpecializedStructGetMember ()" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedStructGetMember"/>
+    <function name="DBusGTypeSpecializedStructSetMember ()" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedStructSetMember"/>
+    <function name="DBusGTypeSpecializedStructVtable" link="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedStructVtable"/>
+    <function name="dbus_g_type_get_collection ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-collection"/>
+    <function name="dbus_g_type_get_map ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-map"/>
+    <function name="dbus_g_type_get_structv ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-structv"/>
+    <function name="dbus_g_type_get_struct ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-struct"/>
+    <function name="dbus_g_type_is_collection ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-is-collection"/>
+    <function name="dbus_g_type_is_map ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-is-map"/>
+    <function name="dbus_g_type_is_struct ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-is-struct"/>
+    <function name="dbus_g_type_get_collection_specialization ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-collection-specialization"/>
+    <function name="dbus_g_type_get_map_key_specialization ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-map-key-specialization"/>
+    <function name="dbus_g_type_get_map_value_specialization ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-map-value-specialization"/>
+    <function name="dbus_g_type_get_struct_member_type ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-struct-member-type"/>
+    <function name="dbus_g_type_get_struct_size ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-struct-size"/>
+    <function name="dbus_g_type_specialized_construct ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-specialized-construct"/>
+    <function name="dbus_g_type_specialized_init_append ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-specialized-init-append"/>
+    <function name="dbus_g_type_specialized_collection_append ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-specialized-collection-append"/>
+    <function name="dbus_g_type_specialized_collection_end_append ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-specialized-collection-end-append"/>
+    <function name="dbus_g_type_specialized_map_append ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-specialized-map-append"/>
+    <function name="dbus_g_type_collection_get_fixed ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-collection-get-fixed"/>
+    <function name="dbus_g_type_collection_value_iterate ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-collection-value-iterate"/>
+    <function name="dbus_g_type_map_value_iterate ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-map-value-iterate"/>
+    <function name="dbus_g_type_struct_get_member ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-struct-get-member"/>
+    <function name="dbus_g_type_struct_set_member ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-struct-set-member"/>
+    <function name="dbus_g_type_struct_get ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-struct-get"/>
+    <function name="dbus_g_type_struct_set ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-struct-set"/>
+    <function name="dbus_g_type_specialized_init ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-specialized-init"/>
+    <function name="dbus_g_type_register_collection ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-register-collection"/>
+    <function name="dbus_g_type_register_map ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-register-map"/>
+    <function name="dbus_g_type_map_peek_vtable ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-map-peek-vtable"/>
+    <function name="dbus_g_type_collection_peek_vtable ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-collection-peek-vtable"/>
+    <function name="dbus_g_type_register_struct ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-type-register-struct"/>
+    <function name="dbus_g_value_build_g_variant ()" link="dbus-glib-Specializable-GType-System.html#dbus-g-value-build-g-variant"/>
+    <function name="DBUS_TYPE_G_BOOLEAN_ARRAY" link="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-BOOLEAN-ARRAY:CAPS"/>
+    <function name="DBUS_TYPE_G_UCHAR_ARRAY" link="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-UCHAR-ARRAY:CAPS"/>
+    <function name="DBUS_TYPE_G_UINT_ARRAY" link="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-UINT-ARRAY:CAPS"/>
+    <function name="DBUS_TYPE_G_INT_ARRAY" link="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-INT-ARRAY:CAPS"/>
+    <function name="DBUS_TYPE_G_UINT64_ARRAY" link="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-UINT64-ARRAY:CAPS"/>
+    <function name="DBUS_TYPE_G_INT64_ARRAY" link="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-INT64-ARRAY:CAPS"/>
+    <function name="DBUS_TYPE_G_OBJECT_ARRAY" link="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-OBJECT-ARRAY:CAPS"/>
+    <function name="DBUS_TYPE_G_STRING_STRING_HASHTABLE" link="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-STRING-STRING-HASHTABLE:CAPS"/>
+    <function name="DBUS_TYPE_G_SIGNATURE" link="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-SIGNATURE:CAPS"/>
+    <function name="dbus_set_g_error ()" link="dbus-glib-DBus-GLib-low-level.html#dbus-set-g-error"/>
+    <function name="dbus_connection_setup_with_g_main ()" link="dbus-glib-DBus-GLib-low-level.html#dbus-connection-setup-with-g-main"/>
+    <function name="dbus_server_setup_with_g_main ()" link="dbus-glib-DBus-GLib-low-level.html#dbus-server-setup-with-g-main"/>
+    <function name="Options" link="dbus-binding-tool.html#id2595756"/>
+  </functions>
+</book>
