@@ -1,0 +1,10 @@
+.
+|-- userland
+|   `-- platform
+|       |-- ipod_ctrl
+|       `-- rfs
+`-- video-userland
+    `-- platform
+        `-- vdec
+
+7 directories, 0 files

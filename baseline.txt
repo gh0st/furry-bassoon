@@ -1,0 +1,14 @@
+Title GMPJ-M2
+
+ClearCase Label: 11.9S421.1
+
+bootloader version: U-Boot 2010.03-00383-g2fb56c8
+  GIT hash finger print 2fb56c82a53b822fe337083888cf69d343301ef5
+
+Linux version: Linux-2.6.34.10-01925-g964c62b
+  GIT hash finger print 964c62b45f257c8f363e711bf46df1e3b1f5cd5d
+
+newest Hotfix: HF295
+
+ADIT integration tag: D22_X_MC1_FEAT
+
