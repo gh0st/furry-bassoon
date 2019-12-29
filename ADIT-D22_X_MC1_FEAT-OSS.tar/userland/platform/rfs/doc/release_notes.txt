@@ -1,0 +1,176 @@
+### Example : /** Release Notes for Configuration Data/Last Mode - Storage  **/
+
+/*
+ *  Basic information 
+ */
+[Name:]  ###enter package name here###
+[Version:] $Name: 1.7 $
+[Owner:] ###enter your name here (e.g. T.Rodenbach/ADITG)###
+[Date:] $Date: 2008/05/28 12:12:21 $
+[Last updated version:] ### Update this when editing this file, e.g. CAL_r_D20
+### HOWTO fill out this release notes:                                   ###
+### Replace the "### Example :" lines with the appropriate data for your ###
+### module                                                               ###
+### Remove these howto-lines                                             ###
+### Remember not to exceed 80 characters per line                        ###
+### Before checking in the release notes the first time, clear the       ###
+### history at the bottom of the file because it contains the history of ###
+### the template.                                                        ###
+
+
+/*
+ *  Feature information
+ */
+[Introduction:]
+### Example : CD/LM-S enables reading and writing configuration data as well
+### Example : as user data. The data is stored as hashed hive. There are two
+### Example : hives, a static one which containes static configuration data 
+### Example : (e.g. for OS) and a dynamic one which contains information from 
+### Example : applications. Dynamic data is stored in USB stick
+### Include information about
+### * Startup sequence 
+###   - are there any constraints? 
+###   - what is the recommended start-up sequence? 
+### * required workarounds (if any)
+
+/*
+ *  Showing Linking to Related Composite Baseline
+ */
+[Related Composite Baseline:] 
+### Example : P32-148-SP-C06_AFW_API_Specification.doc,
+### Example : P32-257-TP-A03_AFW_TestSpec_Result.xls,
+### Example : P32-355-MA-A02-AFW_Manual.doc
+
+[New Features:]
+### Example : This is the first release of the software
+
+[Other Changes:]
+### Example : No changes besides new features and bugfixes
+
+[Missing Features:]
+### Example : Sending Reliable Messages is not implemented yet
+
+/*
+ * Configuration Info
+ */
+[Header files changed:]
+### Yes/no (Have exported header files been changed since the last release?
+
+[Recompilation necessary:]
+Yes
+ 
+/*
+ *  Requirements
+ */
+[Hardware Configuration:]
+### Example : T-Engine Board with Debug Extension Board
+
+[Software Development Environment:]
+### Example : eBinder 1.6 final
+
+[Additional Software and Hardware Requirements:]
+### Example : Fat filesystem and USB stick to store dynamic data
+
+[Dependencies to other packages:]
+### Example : platform/system/common at least version ADIT_r_D10
+### Include non-build dependencies like "A must be started before B"
+
+/*
+ * Announcement of API change
+ */
+[API will be changed at:] 
+### Example : 12.12.2006
+
+[API change has been announced at:] 
+### Example : 11.11.2005
+
+[Confirmation from dependent developers:] 
+### Example : no
+
+[API changed:]
+### List of API functions that have been changed since the last release
+
+[added API:]
+### List of API functions that have been added since the last release
+
+/*
+ *	Tests and Quality Assurance
+ */
+[Compilation checked with product:]
+### Example : bfdemo
+
+[Build Tooling version used for check:]
+### Example : SCR_r_D03
+
+[Tests:]
+### Example : The code has been tested with unit tests. The unit tests can be
+### Example : included into the project by setting the option UNIT_TEST
+### Example : The unit tests can be started with XVY_start_unit_test();
+### Example : Integration tests has been done, therefore the BF-Demo has been
+### Example : upset including CD/LM-S
+
+[Additional Quality Assurance:]
+### Example : The code has been tested with QAC using the adit rules
+
+/* 
+ *	Issues
+ */
+[Fixed Issues:]
+### Example : #34834490: Bluescreen when saving
+### Example : not in iNotion: Greenscreen when loading
+### Where available, use JIRA-Ids and customer Ids (e.g. MMS for BP)
+
+[Known Issues/Restrictions:]
+### Example : CD/LM-S has not been integrated in tooling because some files of
+### Example : bsp need to be modified
+###
+### Describe Restrictions that apply to the software and if possible, describe
+### a workaround
+### Example : Does not work in Process Model 
+### Example : Does not work on T-Sim
+### Example : Files cannot be read from a USB Stick, use a Harddisk instead
+
+[Legal restrictions:]
+### Example : Contains Open Source Code which is covered by the GPL.
+
+/* 
+ *	History
+ 
+$Log: release_notes.txt,v $
+Revision 1.1  2008/05/28 12:12:21  trodenbach
+according to SOPL-299, doc folders were moved to component level
+template was updated
+create_package.pl was NOT yet updated, so a doc folder has to be created manually on component level (if it does not exit yet)
+
+Revision 1.1  2008/04/04 19:48:17  trodenbach
+Template of Gen2 packages
+
+Revision 1.10  2008/02/21 12:58:07  trodenbach
+added explanations as per SOPL-96
+
+Revision 1.9  2008/02/21 12:43:18  trodenbach
+restored content of version 1.7
+
+Revision 1.7  2007/08/01 13:13:10  tkniep
+Added [Related Composite Baseline:]  for supporting the newly defined Composite Baselining process
+
+Revision 1.6  2006/11/15 15:19:23  trodenbach
+Added missing sections
+
+Revision 1.5  2005/12/07 11:00:55  trodenbach
+added new sections
+
+Revision 1.4  2005/11/21 13:10:51  trodenbach
+Agreed proposal for release notes
+
+Revision 1.3  2005/09/30 14:21:37  trodenbach
+layout
+
+Revision 1.2  2005/09/30 14:20:50  trodenbach
+added more explanations
+
+Revision 1.1  2005/09/30 13:18:00  trodenbach
+added release_notes.txt - Template
+added $name$ for file templates and in doxygen config
+
+ */

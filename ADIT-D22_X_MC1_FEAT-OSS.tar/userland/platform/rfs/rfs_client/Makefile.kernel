@@ -1,0 +1,46 @@
+
+# -----------------------------------------------------------------------------
+# Base settings
+# -----------------------------------------------------------------------------
+
+SUBCOMP_NAME = rfs_client
+MODULE_NAME  = rfs_client
+KERNEL_MODE  = yes
+
+# -----------------------------------------------------------------------------
+# Component settings
+# -----------------------------------------------------------------------------
+
+ifeq ($(origin KERNEL_VERSION),undefined)
+  COMP_DIR     = $(M)/..
+  include $(COMP_DIR)/settings.mk
+else	#inside BitBake
+  BASE_DIR     = $(M)/../../../../../..
+  include $(BASE_DIR)/tools/config/mk/default.mk
+endif
+
+# -----------------------------------------------------------------------------
+# Sub-Component settings
+# -----------------------------------------------------------------------------
+
+INCLUDES     += -I$(src)/include -I$(src)/src
+LIBRARIES    +=
+
+ARCHIVE      =
+MODULE       = $(MODULE_NAME).o
+PROGRAM      =
+SHAREDLIB    =
+
+PACKAGES     = $(SOURCE_PATH_UL)/platform/system/common 
+
+SOURCES      = $(SOURCE_DIR)/rfs_client_globals.c $(SOURCE_DIR)/rfs_client_helper.c $(SOURCE_DIR)/rfs_client_iops.c $(SOURCE_DIR)/rfs_client_fops.c $(SOURCE_DIR)/rfs_c.c
+
+# -----------------------------------------------------------------------------
+# Settings for Kernel Module
+# -----------------------------------------------------------------------------
+
+EXTRA_CFLAGS += $(INCLUDES) $(GLOBAL_DEFINES) $(OS_FLAGS) -DEXPORT_SYMTAB
+
+obj-m        += $(MODULE)
+
+$(MODULE_NAME)-objs := $(patsubst %.c, %.o, $(SOURCES))
